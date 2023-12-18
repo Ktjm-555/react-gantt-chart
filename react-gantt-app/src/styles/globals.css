@@ -1,0 +1,54 @@
+/**
+ * システム全体で利用するスタイルを記入します。
+ * ポイントで使うものは汎用化コンポーネントを作成し、そちらに記入すること。
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: var(--root-font-size);
+}
+
+:root {
+	--bs-primary: var(--primary-color);
+}
+
+/* React Bootstrap　上書き*/
+/* ボタン */
+.btn-primary {
+	--bs-btn-color: var(--form-button-text-color-decide);
+	--bs-btn-bg: var(--form-button-bg-color-decide);
+	--bs-btn-border-color: var(--form-button-bg-color-decide);
+	--bs-btn-hover-color: var(--form-button-text-color-decide);
+	--bs-btn-hover-bg: var(--form-button-bg-color-decide);
+	--bs-btn-hover-border-color: var(--form-button-bg-color-decide);
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	--bs-btn-active-color: var(--form-button-text-color-decide);
+	--bs-btn-active-bg: var(--form-button-bg-color-decide-active);
+	--bs-btn-active-border-color: var(--form-button-bg-color-decide-active);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: var(--form-button-text-color-decide);
+	--bs-btn-disabled-bg: var(--form-button-bg-color-decide);
+	--bs-btn-disabled-border-color: var(--form-button-bg-color-decide);
+}
+
+.btn-secondary {
+	--bs-btn-color: var(--form-button-text-color-cancel);
+	--bs-btn-bg: var(--form-button-bg-color-cancel);
+	--bs-btn-border-color: var(--form-button-border-color-cancel);
+	--bs-btn-hover-color: var(--form-button-text-color-cancel);
+	--bs-btn-hover-bg: var(--form-button-bg-color-cancel);
+	--bs-btn-hover-border-color: var(--form-button-border-color-cancel);
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	--bs-btn-active-color: var(--form-button-text-color-cancel);
+	--bs-btn-active-bg: var(--form-button-bg-color-cancel-active);
+	--bs-btn-active-border-color: var(--form-button-border-color-cancel);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: var(--form-button-text-color-cancel);
+	--bs-btn-disabled-bg: var(--form-button-border-color-cancel);
+	--bs-btn-disabled-border-color: var(--form-button-border-color-cancel);
+}
